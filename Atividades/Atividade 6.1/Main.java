@@ -7,6 +7,6 @@ public class Main {
         l.imprime();
         l.imprimeFim();
         System.out.println("Tamanho da lista: "+l.tamanho());
-        System.out.println("Lista vazia: "+l.estahVazia(5));      
+        System.out.println("Lista vazia: "+l.estahVazia(l));      
     }
 }

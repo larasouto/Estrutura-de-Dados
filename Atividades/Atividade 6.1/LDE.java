@@ -73,7 +73,7 @@ public class LDE implements ILista {
     public int tamanho(){
         return this.totalInfo;
     }
-    public boolean estahVazia(int info) {
+    public boolean estahVazia(Object info) {
         if(inicio==null){
             return true;
         }else{
