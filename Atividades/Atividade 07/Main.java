@@ -1,9 +1,7 @@
-import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
         RecVetor rv = new RecVetor();
-        Random rand = new Random();
         int [] vetor = new int[1000];
 
         for (int i = 0; i < 1000; i++) {
