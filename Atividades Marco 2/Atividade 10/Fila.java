@@ -1,14 +1,14 @@
-public class Fila implements IFila { //tem funcionamento circular
+public class Fila implements IFila {
     private int nElemFila;
     private int inicio;
     private int fim;
     private Object[] vetFila;
-    public Fila (int tamFila) { //construtor
+    public Fila (int tamFila) {
         this.nElemFila = 0;
         this.inicio = 0;
         this.vetFila = new Object[tamFila];
     }
-    public boolean add(Object info){ //método que insere na fila
+    public boolean add(Object info){
     if (this.nElemFila == vetFila.length) {
         System.out.println("Capacidade da fila esgotou");
         return false;
@@ -26,6 +26,7 @@ public class Fila implements IFila { //tem funcionamento circular
         }
         this.inicio = (this.inicio + 1) % this.vetFila.length;
         this.nElemFila--;
+        this.vetFila[inicio] = null;
         return true;
     }
     public boolean isEmpty() {
